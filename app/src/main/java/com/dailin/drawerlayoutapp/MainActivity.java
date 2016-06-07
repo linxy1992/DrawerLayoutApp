@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.id_main,new MainFragment());
         fragmentTransaction.replace(R.id.id_left_menu,new LeftFragment());
         fragmentTransaction.commit();
         initEvents();
